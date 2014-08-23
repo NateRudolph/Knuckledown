@@ -14,8 +14,8 @@ body, html {
 }
 h1 {
     margin-top:30%;
-    font-weight:700;
-    font-size:4em;
+    font-weight:400;
+    font-size:2em;
 }
 #taskInput {
     margin-top:3%;
