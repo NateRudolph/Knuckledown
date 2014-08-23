@@ -29,6 +29,7 @@ h1 {
     color:white;
     outline: 0;
     padding:1%;
+    transition:all 1s ease;
 }
 #taskInput:focus {
     outline:0;
@@ -44,10 +45,7 @@ h1 {
     font-size:4em;
     color:white;
     cursor:default;
-    padding:1%;
-    -webkit-box-shadow: inset 25px 25px 25px -25px rgba(0, 0, 0, 0.45), inset -25px 0px 25px -25px rgba(0, 0, 0, 0.45);
-    -moz-box-shadow: inset 25px 0px 25px -25px rgba(0, 0, 0, 0.45), inset -25px 0px 25px -25px rgba(0, 0, 0, 0.45);
-    box-shadow: inset 0px 40px 40px -40px rgba(0, 0, 0, 0.45), inset 0px -40px 40px -40px rgba(0, 0, 0, 0.45); 
+    padding:1%; 
 }
 #taskList li {
     padding:1%;
@@ -60,4 +58,9 @@ h1 {
 }
 #taskList span {
      float:right;   
+}
+.innerShadow {
+    -webkit-box-shadow: inset 25px 25px 25px -25px rgba(0, 0, 0, 0.45), inset -25px 0px 25px -25px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: inset 25px 0px 25px -25px rgba(0, 0, 0, 0.45), inset -25px 0px 25px -25px rgba(0, 0, 0, 0.45);
+    box-shadow: inset 0px 40px 40px -40px rgba(0, 0, 0, 0.45), inset 0px -40px 40px -40px rgba(0, 0, 0, 0.45);   
 }
