@@ -1,11 +1,15 @@
 body, html {
+    height:100%;
+    overflow:hidden;
     color:white;
     background:#107eb9;
-    font-family: 'Oswald', sans-serif; /* font-weight: bold=700, normal=400, light=300 */
+    font-family:'Oswald', sans-serif; /* font-weight: bold=700, normal=400, light=300 */
 }
 #wrap {
     max-width:2000px;
     width:70%;
+    height:100%;
+    min-height:600px;
     margin:0 auto;
 }
 h1 {
@@ -30,22 +34,29 @@ h1 {
     outline:0;
     border:none;
 }
-
 #taskList {
+    height:40%;
+    overflow:scroll;
     padding:1%;
-    margin:3% auto;
+    margin-top:3%;
     width:100%;
     font-weight: 300;
-    font-size:5em;
+    font-size:4em;
     color:white;
     cursor:default;
+    padding:1%;
+    -webkit-box-shadow: inset 25px 25px 25px -25px rgba(0, 0, 0, 0.45), inset -25px 0px 25px -25px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: inset 25px 0px 25px -25px rgba(0, 0, 0, 0.45), inset -25px 0px 25px -25px rgba(0, 0, 0, 0.45);
+    box-shadow: inset 0px 40px 40px -40px rgba(0, 0, 0, 0.45), inset 0px -40px 40px -40px rgba(0, 0, 0, 0.45); 
 }
 #taskList li {
-    margin:5% auto;
+    padding:1%;
+    margin:1% auto;
     opacity:0.5;   
 }
 #taskList li:hover {
     opacity:1;
+    background:#0f6695;
 }
 #taskList span {
      float:right;   
