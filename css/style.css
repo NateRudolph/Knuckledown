@@ -1,10 +1,10 @@
 body, html {
     color:white;
-    background:#bc5a00;
+    background:#107eb9;
     font-family: 'Oswald', sans-serif; /* font-weight: bold=700, normal=400, light=300 */
 }
 #wrap {
-    max-width:1000px;
+    max-width:2000px;
     width:70%;
     margin:0 auto;
 }
@@ -15,7 +15,17 @@ h1 {
 #taskInput {
     margin-top:5%;
     width:50%;
-    font-size:2em;
-    background:#a55000;
+    font-size:3em;
+    font-family:'Oswald';
+    font-weight:300;
+    letter-spacing: 0.03em;
+    background:#0f6695;
+    border:none;
+    color:white;
+    outline: 0;
+    padding:1%;
+}
+#taskInput:focus {
+    outline:0;
     border:none;
 }
