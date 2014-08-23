@@ -13,7 +13,7 @@ body, html {
     margin:0 auto;
 }
 h1 {
-    margin-top:3%;
+    margin-top:30%;
     font-weight:700;
     font-size:4em;
 }
@@ -46,6 +46,10 @@ h1 {
     cursor:default;
     padding:1%; 
     transition:all 1s ease;
+}
+.hideTaskList {
+    display:none;
+    opacity:0 !important;
 }
 #taskList li {
     padding:1%;
