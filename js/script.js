@@ -11,7 +11,7 @@ $(document).ready(function () {
     $("#taskInput").keyup(function(e){
         if(e.which == 13){
             var value = $(this).val();
-            $("#taskList").append("<li>"+value+"</li>");
+            $("#taskList").prepend("<li>"+value+"</li>");
             $(this).val(null);
         }
     });
