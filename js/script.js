@@ -8,8 +8,12 @@ $(document).ready(function () {
         },1000);
     });
     
-    $("#taskInput").keyup(function(){
-        alert("asdf");
+    $("#taskInput").keyup(function(e){
+        if(e.which == 13){
+            var value = $(this).val();
+            $("#taskList").append("<li>"+value+"</li>");
+            $(this).val(null);
+        }
     });
     
 });
@@ -20,9 +24,9 @@ $(document).ready(function () {
 ////////////////////////////////////////////////////////////
 function loadTitle(){
     var title = $("h1");
-    title.css({"opacity":0,"bottom":-10,"position":"relative"});
+    title.css({"opacity":0,"bottom":-5,"position":"relative"});
     title.animate({
         "opacity":1,
-        "bottom":"10"
-    },1500);
+        "bottom":"0"
+    },600);
 }
