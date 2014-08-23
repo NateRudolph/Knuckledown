@@ -1,0 +1,21 @@
+body, html {
+    color:white;
+    background:#bc5a00;
+    font-family: 'Oswald', sans-serif; /* font-weight: bold=700, normal=400, light=300 */
+}
+#wrap {
+    max-width:1000px;
+    width:70%;
+    margin:0 auto;
+}
+h1 {
+    font-weight:700;
+    font-size:4em;   
+}
+#taskInput {
+    margin-top:5%;
+    width:50%;
+    font-size:2em;
+    background:#a55000;
+    border:none;
+}
