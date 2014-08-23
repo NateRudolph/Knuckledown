@@ -29,7 +29,6 @@ h1 {
     color:white;
     outline: 0;
     padding:1%;
-    transition:all 1s ease;
 }
 #taskInput:focus {
     outline:0;
@@ -46,6 +45,7 @@ h1 {
     color:white;
     cursor:default;
     padding:1%; 
+    transition:all 1s ease;
 }
 #taskList li {
     padding:1%;

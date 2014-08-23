@@ -1,5 +1,10 @@
 $(document).ready(function () {
-    
+    $("#taskList").scroll(function(){
+        $(this).addClass("innerShadow");
+        setTimeout(function(){
+            $("#taskList").removeClass("innerShadow");
+        },1000);
+    });
 });
 // IDEA:
 // Starting the timer with a big button. Activates different mode, starts going through the tasks. 
