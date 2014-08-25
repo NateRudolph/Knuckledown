@@ -59,6 +59,7 @@ h1 {
 #taskList li:hover {
     opacity:1;
     background:#0f6695;
+    text-decoration: line-through;
 }
 #taskList span {
      float:right;   

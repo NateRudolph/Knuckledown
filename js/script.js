@@ -8,11 +8,15 @@ $(document).ready(function () {
         },1000);
     });
     
+
+    
     $("#taskInput").keyup(function(e){
         if(e.which == 13){
             var value = $(this).val();
-            $("#taskList").prepend("<li>"+value+"</li>");
+            var number = value.match(/\d+/);
+            $("#taskList").prepend("<li>"+value+"<span class='timeAmount'>"+number+" min</span>"+"</li>");
             $(this).val(null);
+            updateList();
         }
     });
     
@@ -35,4 +39,12 @@ function loadTitle(){
         "opacity":1,
         "bottom":"0"
     },600);
+}
+
+////////////////////////////////////////////////////////////
+function updateList(){
+    $("#taskList > li").click(function(){
+        $(this).remove();
+    });
+
 }
