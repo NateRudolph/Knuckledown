@@ -23,7 +23,7 @@ $(document).ready(function () {
     
     $("#taskInput").focus(function(){
         loadTitle();
-        $("h1").html("What do you need to do first?");
+        $("h1").html("What do you need to do?");
 
     });
     
