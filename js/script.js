@@ -14,10 +14,6 @@ $(document).ready(function () {
             $("#taskList").prepend("<li>"+value+"</li>");
             $(this).val(null);
         }
-        if($("#taskInput").val().length > 6){
-            loadTitle();
-            $("h1").html("Give the task a time like this:<br><em>Write the intro   </em>   20"); 
-        }
     });
     
     $("#taskInput").focus(function(){
