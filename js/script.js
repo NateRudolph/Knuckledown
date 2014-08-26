@@ -55,5 +55,6 @@ function updateList(){
 ////////////////////////////////////////////////////////////
 function runTasks(){
     // Save task list and status to localstorage
-    
+    $("#currentTask").removeClass("noShow");
+
 }
