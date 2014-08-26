@@ -27,6 +27,10 @@ $(document).ready(function () {
 
     });
     
+    $("startBtn").click(function(){
+       runTasks(); 
+    };
+    
 });
 // IDEA:
 // Starting the timer with a big button. Activates different mode, starts going through the tasks. 
@@ -47,5 +51,9 @@ function updateList(){
     $("#taskList > li").click(function(){
         $(this).remove();
     });
-
+}
+////////////////////////////////////////////////////////////
+function runTasks(){
+    // Save task list and status to localstorage
+    
 }
