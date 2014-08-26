@@ -1,3 +1,5 @@
+var listItems = [];
+
 $(document).ready(function () {
     loadTitle();
     
@@ -13,21 +15,24 @@ $(document).ready(function () {
     $("#taskInput").keyup(function(e){
         if(e.which == 13){
             var value = $(this).val();
-            var number = value.match(/\d+/);
+            var number = value.match(/\d+/).join();
+            number = number + 5;
+            console.log(number);
             value = value.replace(/\d+/g,'');
             $("#taskList").prepend("<li>"+value+"<span class='timeAmount'>"+number+" min</span>"+"</li>");
             $(this).val(null);
+            listItems.push({"value":value, "number":number});
             updateList();
         }
     });
     
     $("#taskInput").focus(function(){
-        loadTitle();
+//        loadTitle();
         $("h1").html("What do you need to do?");
 
     });
     
-    $("startBtn").click(function(){
+    $("#startBtn").click(function(){
        runTasks(); 
     });
     
@@ -56,5 +61,6 @@ function updateList(){
 function runTasks(){
     // Save task list and status to localstorage
     $("#currentTask").removeClass("noShow");
+    $("#title").html("<h1>"+$("#taskList li:first")+"</h1>");
 
 }
