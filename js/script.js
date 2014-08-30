@@ -16,7 +16,6 @@ $(document).ready(function () {
         if(e.which == 13){
             var value = $(this).val();
             var number = value.match(/\d+/).join();
-            number = number + 5;
             console.log(number);
             value = value.replace(/\d+/g,'');
             $("#taskList").prepend("<li>"+value+"<span class='timeAmount'>"+number+" min</span>"+"</li>");
