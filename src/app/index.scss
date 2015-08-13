@@ -1,6 +1,19 @@
 // Add support for various themes
 // Night mode, day, happy, intense, calm, bright
 
+@import "scss/_animations";
+@import "scss/_palette";
+@import "scss/_themes";
+@import "scss/_typography"
+
+body, html {
+    height:100%;
+    overflow:hidden;
+    color:white;
+    background:#107eb9;
+    font-family:'Oswald', sans-serif; /* font-weight: bold=700, normal=400, light=300 */
+}
+
 /* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
    all your sass files automatically */
 // injector
