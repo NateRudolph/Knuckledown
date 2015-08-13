@@ -5,7 +5,7 @@
 		<input type="number" ng-model="taskTime">
 		<button type="submit">Add Task</button>
 	</form>
-	<a href="#" ui-sref="active">Start</a>
+	<button ng-click="goActive()">Start!</button>
 	<ul>
 		<li ng-repeat="item in list">{{ item.name }} | {{ item.time }} <button ng-click="deleteTask($index)">X</button></li>
 	</ul>

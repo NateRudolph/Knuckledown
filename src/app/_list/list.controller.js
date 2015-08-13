@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('knuckledown')
-  .controller('ListCtrl', function ($scope) {
+  .controller('ListCtrl', function ($scope, $state) {
     
     var list = [];
 
@@ -14,5 +14,11 @@ angular.module('knuckledown')
   		list.splice(x,1);
   		$scope.list = list;
   	};
+
+  	$scope.goActive = function () {
+  		// save list to local storage then...
+  		$state.go("active");
+  	};
+
 
   });
