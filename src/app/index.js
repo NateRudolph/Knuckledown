@@ -13,12 +13,14 @@ angular.module('knuckledown', [
       .state('list', {
         url: '/',
         templateUrl: 'app/_list/list.html',
-        controller: 'ListCtrl'
+        controller: 'listController',
+        controllerAs: 'listCtrl'
       })
       .state('active', {
         url: '/active',
         templateUrl: 'app/_active/active.html',
-        controller: 'ActiveCtrl'
+        controller: 'activeController',
+        controllerAs: 'activeCtrl'
       });
 
     $urlRouterProvider.otherwise('/');

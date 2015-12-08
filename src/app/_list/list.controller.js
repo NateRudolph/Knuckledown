@@ -1,13 +1,17 @@
 'use strict';
 
 angular.module('knuckledown')
-  .controller('ListCtrl', function ($scope, $state) {
+  .controller('listController', function ($scope, $state, taskService) {
     
     var list = [];
 
+    var self = this;
+
   	$scope.addTask = function (taskName, taskTime) {
-  		list.push({ name: taskName, time: taskTime });
-  		$scope.list = list;
+      taskService.addTask(taskName, taskTime);
+      console.log("task service: ", taskService.returnTasks());
+  		//$scope.list = {};
+
   	};
 
   	$scope.deleteTask = function (x) {
@@ -19,6 +23,10 @@ angular.module('knuckledown')
   		// save list to local storage then...
   		$state.go("active");
   	};
+
+    self.message = "List View";
+
+    console.log("task service: ", taskService.returnTasks);
 
 
   });
