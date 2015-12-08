@@ -3,4 +3,5 @@ bower_components/
 .sass-cache/
 .tmp/
 dist/
+working_files/
 .DS_Store
