@@ -10,7 +10,7 @@ angular.module('knuckledown')
           data.tasks.push({ title: title, time: time });
         },
         removeTask = function (x) {
-          console.log("remove task: ", x);
+          console.log('remove task: ', x);
         },
         returnTasks = function () {
           return data.tasks;
@@ -20,5 +20,5 @@ angular.module('knuckledown')
           addTask: addTask,
           removeTask: removeTask,
           returnTasks: returnTasks
-        }
+        };
   });

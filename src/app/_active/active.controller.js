@@ -1,10 +1,10 @@
 'use strict';
 
 angular.module('knuckledown')
-  .controller('activeController', function ($scope) {
+  .controller('activeController', function ($scope, taskService) {
 
   	var self = this;
 
-  	self.message = "Active state";
+  	self.tasks = taskService.returnTasks();
 
   });

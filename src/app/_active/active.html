@@ -1,6 +1,5 @@
 <div class="container">
 	<h1>Active</h1>
-	<h2>{{ currentTask.name }}</h2>
 	<a ui-sref="list">Go back</a>
-	<p>{{ activeCtrl.message }}</p>
+	<p ng-repeat="task in activeCtrl.tasks">{{ task }}</p>
 </div>
