@@ -1,13 +1,9 @@
 <div class="container">
-	<h1>List</h1>
-	<form ng-submit="addTask(taskName, taskTime)">
-		<input type="text" ng-model="taskName">
-		<input type="number" ng-model="taskTime">
-		<button type="submit">Add Task</button>
-	</form>
-	<p>{{ listCtrl.message }}</p>
-	<button ng-click="goActive()">Start!</button>
+	
+	<add-task></add-task>
+
+	<button ui-sref="active">Start!</button>
 	<ul>
-		<li ng-repeat="item in tasks">{{ item.title }} | {{ item.time }} <button ng-click="deleteTask($index)">X</button></li>
+		<li ng-repeat="item in tasks">{{ item.title }} | {{ item.time }} <button ng-click="removeTask($index)">X</button></li>
 	</ul>
 </div>
