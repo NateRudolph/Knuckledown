@@ -8,6 +8,6 @@
 	<p>{{ listCtrl.message }}</p>
 	<button ng-click="goActive()">Start!</button>
 	<ul>
-		<li ng-repeat="item in tasks">{{ item.name }} | {{ item.time }} <button ng-click="deleteTask($index)">X</button></li>
+		<li ng-repeat="item in tasks">{{ item.title }} | {{ item.time }} <button ng-click="deleteTask($index)">X</button></li>
 	</ul>
 </div>

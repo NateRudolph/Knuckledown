@@ -10,6 +10,8 @@ angular.module('knuckledown')
   	$scope.addTask = function (taskName, taskTime) {
       taskService.addTask(taskName, taskTime);
       $scope.tasks = taskService.returnTasks();
+      $scope.taskName = "";
+      $scope.taskTime = "";
   	};
 
   	$scope.deleteTask = function (x) {
@@ -21,10 +23,4 @@ angular.module('knuckledown')
   		// save list to local storage then...
   		$state.go('active');
   	};
-
-    self.message = 'List View';
-
-    console.log('task service: ', taskService.returnTasks);
-
-
   });
